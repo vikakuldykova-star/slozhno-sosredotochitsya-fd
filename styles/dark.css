@@ -9,4 +9,60 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --background-image: var(--dark-image);
+  --accent-color: var(--pink-dark);
+  --color: var(--pale-pink);
+  --header-color: var(--violet);
+  --title-decor: var(--blue);
+}
+:root.theme-dark .decorated-zone{
+  position: relative;
+
+}
+
+:root.theme-dark .decorated-zone::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top:0px;
+  right: 0px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+  width:25px;
+  height: 25px;
+}
+
+:root.theme-dark .decorated-zone::after {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom:0px;
+  left: 0px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  width:25px;
+  height: 25px;
+}
+
+:root.theme-dark .header__decoration {
+display: inline-block;
+  position: absolute;
+  top:0px;
+  left: 294px;
+  font-family: var(--font);
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+color:var(--accent-color);
+}
+
+:root.theme-dark .header__decoration::after{
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-left: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  background-color: var(--accent-color);
 }

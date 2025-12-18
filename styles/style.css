@@ -1,5 +1,84 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  /* сохраните в разметке и стилях класс page у тега body. 
+  Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-image: var(--background-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #000;
+}
+
+.header {
+  padding: 10px;
+  block-size: 100vh;
+  min-block-size: 668px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr 0.6fr;
+  position: relative;
+}
+
+.header__decoration {
+  display: none;
+}
+
+.header__theme-menu {
+  display: grid;
+  justify-self: end;
+  align-items: center;
+  margin: 75px 0 65px;
+}
+
+.header__theme-menu-list {
+  list-style-type: none;
+  display: grid;
+  gap: 11.5px;
+  margin: 0;
+  font-family: var(--font);
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: none;
+  color: var(--accent-color);
+  font-family: var(--font);
+  font-weight: var(--weight-normal);
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: lowercase;
+  
+}
+
+.header__title {
+  font-family: var(--font);
+  font-weight: var(--weight-bold);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 83%;
+  letter-spacing: 0%;
+  color: var(--header-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  margin: 0 0 55px;
+}
+
+@media (width >768px) {
+  .header__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
+
+.header__description {
+  display: inline-block;
+  width: fit-content;
+  font-family: var(--font);
+  font-weight: var(--weight-bold);
+  font-size: 18px;
+  line-height: 23.4px;
+  background-color: var(--accent-color);
+  color: var(--title-decor);
+  margin: 0 0 56px;
+  text-align: left;
+  padding:0 2px;
 }
