@@ -13,4 +13,6 @@
   --accent-color: var(--pink-light);
   --color: var(--grey);
   --header-color: var(--pink);
+  --title-decor:var(--grey);
+  --decor-header:var(--grey);
 }
