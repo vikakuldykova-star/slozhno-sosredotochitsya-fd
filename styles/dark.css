@@ -14,7 +14,8 @@
   --color: var(--pale-pink);
   --header-color: var(--violet);
   --title-decor: var(--blue);
-  --decor-header:var(--pink-dark);
+  --decor:var(--pink-dark);
+  --decor-rgb: var(--pink-dark-rgb);
 }
 
 :root.theme-dark .decorated-zone {

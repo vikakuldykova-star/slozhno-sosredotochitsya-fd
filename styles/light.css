@@ -14,5 +14,12 @@
   --color: var(--grey);
   --header-color: var(--pink);
   --title-decor:var(--grey);
-  --decor-header:var(--grey);
+  --decor:var(--grey);
+  --decor-rgb:var(--grey-rgb);
+
+  
+}
+
+:root.theme-light .header__decoration {
+  display: none;
 }
