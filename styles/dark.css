@@ -28,8 +28,8 @@
 :root.theme-dark .header__decoration {
 display: inline-block;
   position: absolute;
-  top:10px;
-  left: 304px;
+  top:var(--padding);
+  right: calc(var(--padding) + 10px);
   font-family: var(--font);
 font-size: 18px;
 line-height: 25px;
