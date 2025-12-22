@@ -14,27 +14,24 @@
   --color: var(--pale-pink);
   --header-color: var(--violet);
   --title-decor: var(--blue);
-  --decor:var(--pink-dark);
+  --decor: var(--pink-dark);
   --decor-rgb: var(--pink-dark-rgb);
 }
 
 :root.theme-dark .decorated-zone {
   position: relative;
-
 }
 
-
-
 :root.theme-dark .header__decoration {
-display: inline-block;
+  display: inline-block;
   position: absolute;
-  top:var(--padding);
+  top: var(--padding);
   right: calc(var(--padding) + 10px);
   font-family: var(--font);
-font-size: 18px;
-line-height: 25px;
-text-align: center;
-color:var(--accent-color);
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: var(--accent-color);
 }
 
 :root.theme-dark .header__decoration::after {
