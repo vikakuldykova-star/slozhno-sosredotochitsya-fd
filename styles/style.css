@@ -17,7 +17,7 @@
   block-size: 100vh;
   min-block-size: 668px;
   display: grid;
-  grid-template-rows: auto max-content auto;
+  grid-template-rows: 1fr max-content 1fr;
   position: relative;
   gap: 55px;
   align-items: start;
@@ -51,13 +51,14 @@
   display: grid;
   justify-self: end;
   align-self: end;
-  margin-top: 10px;
+  margin-top: 65px;
+  margin-bottom: 10px;
 }
 
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 11.5px;
+  gap: 14px;
   font-family: var(--font);
   align-items: flex-end;
   justify-content: flex-start;
@@ -107,7 +108,7 @@
   text-shadow: 4px 4px 0 var(--accent-color);
   justify-self: start;
   align-self: start;
-  margin-top: 20px;
+
 }
 
 .header__description {
@@ -450,7 +451,8 @@
   }
 
   .distraction-section {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
+
   }
 
   .distraction-section .section__list {
