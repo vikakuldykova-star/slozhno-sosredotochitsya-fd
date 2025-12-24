@@ -11,7 +11,7 @@
   */
   --background-image: var(--dark-image, none);
   --accent-color: var(--pink-dark, #ff0070);
-  --color: var(--pale-pink,#f1b2ce);
+  --color: var(--pale-pink, #f1b2ce);
   --header-color: var(--violet, #db00ff);
   --title-decor: var(--blue, #000028);
   --decor: var(--pink-dark, #ff0070);
@@ -28,7 +28,7 @@
   position: absolute;
   top: var(--padding, 10px);
   right: calc(var(--padding, 10px) + 10px);
-  font-family: var(--font,'IBM Plex mono', monospace);
+  font-family: var(--font, 'IBM Plex mono', monospace);
   font-size: var(--font-size, 18px);
   line-height: 25px;
   text-align: center;
