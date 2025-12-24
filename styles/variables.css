@@ -3,22 +3,19 @@
   и их переопределение под различные устройства
 */
 :root {
-  --dark-image: url('../images/cover-image-dark.png');
-  --light-image: url('../images/cover-image-light.png');
-  --pink-dark: #ff0070;
-  --pink-light: #ff8dcb;
-  --violet: #db00ff;
-  --pink: #ffc2e6;
-  --pale-pink: #f1b2ce;
-  --grey: #353430;
+  --background-image: url('../images/cover-image-dark.png');
+  --accent-color: #ff0070;
+  --color: #f1b2ce;
+  --header-color: #db00ff;
+  --title-decor: #000028;
+  --decor: #ff0070;
+  --decor-rgb: 255 0 112;
+  --background-color: #000028;
+
   --font: 'IBM Plex mono', monospace;
   --weight-normal: 400;
   --weight-bold: 700;
-  --blue: #000028;
-  --pink-dark-rgb: 255 0 112;
-  --grey-rgb: 53 52 48;
   --font-size: 18px;
   --padding: 10px;
-  --background-light: #fff1f7;
   --line-height: 1.3;
 }

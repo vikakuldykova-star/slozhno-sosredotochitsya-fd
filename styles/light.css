@@ -9,16 +9,33 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --background-image: var(--light-image, none);
-  --accent-color: var(--pink-light, #ff8dcb);
-  --color: var(--grey, #353430);
-  --header-color: var(--pink, #ffc2e6);
-  --title-decor: var(--grey, #353430);
-  --decor: var(--grey, #353430);
-  --decor-rgb: var(--grey-rgb, 53 52 48);
-  --background-color: var(--background-light, #fff1f7);
+  --background-image: url('../images/cover-image-light.png');
+  --accent-color: #ff8dcb;
+  --color: #353430;
+  --header-color: #ffc2e6;
+  --title-decor: #353430;
+  --decor: #353430;
+  --decor-rgb: 53 52 48;
+  --background-color: #fff1f7;
 }
 
 :root.theme-light .header__decoration {
   display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root.theme-auto {
+    --background-image: var(--light-image, none);
+    --accent-color: var(--pink-light, #ff8dcb);
+    --color: var(--grey, #353430);
+    --header-color: var(--pink, #ffc2e6);
+    --title-decor: var(--grey, #353430);
+    --decor: var(--grey, #353430);
+    --decor-rgb: var(--grey-rgb, 53 52 48);
+    --background-color: var(--background-light, #fff1f7);
+  }
+
+  :root.theme-auto .header__decoration {
+    display: none;
+  }
 }
