@@ -288,6 +288,7 @@
       margin-left: 10px;
     }
   }
+}
 
   @media (prefers-color-scheme: light) {
     :root.theme-auto {
@@ -489,4 +490,4 @@
       gap: 20px;
     }
   }
-}
+
