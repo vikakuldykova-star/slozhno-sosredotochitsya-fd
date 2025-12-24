@@ -9,14 +9,14 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --background-image: var(--light-image);
-  --accent-color: var(--pink-light);
-  --color: var(--grey);
-  --header-color: var(--pink);
-  --title-decor: var(--grey);
-  --decor: var(--grey);
-  --decor-rgb: var(--grey-rgb);
-  --background-color: var(--background-light);
+  --background-image: var(--light-image, none);
+  --accent-color: var(--pink-light, #ff8dcb);
+  --color: var(--grey, #353430);
+  --header-color: var(--pink, #ffc2e6);
+  --title-decor: var(--grey, #353430);
+  --decor: var(--grey, #353430);
+  --decor-rgb: var(--grey-rgb, 53 52 48);
+  --background-color: var(--background-light, #fff1f7);
 }
 
 :root.theme-light .header__decoration {

@@ -40,3 +40,8 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+.text-common {
+  font-family: var(--font);
+  font-size: var(--font-size);
+}
