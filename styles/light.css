@@ -16,6 +16,8 @@
   --title-decor: var(--grey);
   --decor: var(--grey);
   --decor-rgb: var(--grey-rgb);
+  --background-color: var(--background-light)
+
 }
 
 :root.theme-light .header__decoration {

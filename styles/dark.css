@@ -16,6 +16,7 @@
   --title-decor: var(--blue);
   --decor: var(--pink-dark);
   --decor-rgb: var(--pink-dark-rgb);
+  --background-color: var(--blue);
 }
 
 :root.theme-dark .decorated-zone {
@@ -28,19 +29,31 @@
   top: var(--padding);
   right: calc(var(--padding) + 10px);
   font-family: var(--font);
-  font-size: 18px;
+  font-size: var(--font-size);
   line-height: 25px;
   text-align: center;
   color: var(--accent-color);
 }
 
 :root.theme-dark .header__decoration::after {
-  content: "";
+  content: '';
   display: inline-block;
   width: 9px;
   height: 9px;
-  margin-left: 10px;
+  margin-left: var(--padding);
   border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--accent-color);
   background-color: var(--accent-color);
+}
+
+@media (min-width: 768px) {
+  :root.theme-dark .header__decoration {
+    top: 18px;
+    right: calc(var(--padding) + 10px);
+  }
+
+  :root.theme-dark .header__decoration::after {
+    content: '';
+    margin-left: 10px;
+  }
 }
