@@ -11,6 +11,7 @@
   --decor: #ff0070;
   --decor-rgb: 255 0 112;
   --background-color: #000028;
+  --header-decoration-display: inline-block;
 
   --font: 'IBM Plex mono', monospace;
   --weight-normal: 400;

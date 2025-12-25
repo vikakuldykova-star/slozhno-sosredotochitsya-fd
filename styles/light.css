@@ -17,14 +17,15 @@
   --decor: #353430;
   --decor-rgb: 53 52 48;
   --background-color: #fff1f7;
+  --header-decoration-display: none;
 }
 
 :root.theme-light .header__decoration {
-  display: none;
+  display: var(--header-decoration-display);
 }
 
 @media (prefers-color-scheme: light) {
-  :root.theme-auto {
+  :root {
     --background-image: var(--light-image, none);
     --accent-color: var(--pink-light, #ff8dcb);
     --color: var(--grey, #353430);
@@ -33,9 +34,10 @@
     --decor: var(--grey, #353430);
     --decor-rgb: var(--grey-rgb, 53 52 48);
     --background-color: var(--background-light, #fff1f7);
+    --header-decoration-display: none;
   }
 
-  :root.theme-auto .header__decoration {
-    display: none;
+  .header__decoration {
+    display: var(--header-decoration-display);
   }
 }

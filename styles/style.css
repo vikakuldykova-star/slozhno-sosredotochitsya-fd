@@ -27,7 +27,7 @@
 }
 
 .header__decoration {
-  display: inline-block;
+  display: var(--header-decoration-display, inline-block);
   position: absolute;
   top: var(--padding, 10px);
   right: calc(var(--padding, 10px) + 30px);
